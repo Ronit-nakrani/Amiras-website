@@ -1,0 +1,27 @@
+{
+  "name": "hotel-amiras-website",
+  "version": "1.0.0",
+  "description": "Modern MERN Stack website for Hotel Amiras - Pure Veg Restaurant, Surat",
+  "private": true,
+  "scripts": {
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "restaurant",
+    "mern",
+    "pure-veg",
+    "hotel-amiras",
+    "surat"
+  ],
+  "author": "Hotel Amiras",
+  "license": "ISC"
+}
+
