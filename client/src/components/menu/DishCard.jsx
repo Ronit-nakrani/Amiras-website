@@ -111,7 +111,7 @@ export default function DishCard({
             className="inline-flex items-center space-x-1.5 px-3.5 py-1.5 rounded-xl bg-stone-800 hover:bg-amber-500 text-stone-200 hover:text-stone-950 border border-stone-700 hover:border-amber-500 font-bold text-xs transition-all transform active:scale-95 shadow-sm"
           >
             <Eye className="w-3.5 h-3.5" />
-            <span>5 Photos & Details</span>
+            <span>Details</span>
           </button>
         </div>
       </div>
