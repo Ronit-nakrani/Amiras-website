@@ -1,19 +1,149 @@
+```html
 <!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%2310b981'/><polygon points='50,20 62,45 88,45 67,61 75,85 50,70 25,85 33,61 12,45 38,45' fill='%23ffffff'/></svg>" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%2310b981'/><polygon points='50,20 62,45 88,45 67,61 75,85 50,70 25,85 33,61 12,45 38,45' fill='%23ffffff'/></svg>"
+    />
+
+    <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hotel Amiras | Pure Vegetarian Casual Dining in Surat</title>
-    <meta name="description" content="Hotel Amiras - Renowned Pure Veg Restaurant in Nana Varachha, Surat. Specializing in authentic Punjabi, North Indian, and Indo-Chinese cuisine. Rating 4.4★." />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Browser Theme Color -->
+    <meta name="theme-color" content="#0f0d0b" />
+
+    <!-- Search Engine Instructions -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://amiras-website.vercel.app/" />
+
+    <!-- SEO Title -->
+    <title>
+      Hotel Amiras | Pure Veg Restaurant in Nana Varachha, Surat
+    </title>
+
+    <!-- SEO Description -->
+    <meta
+      name="description"
+      content="Hotel Amiras is a renowned pure vegetarian restaurant in Nana Varachha, Surat, serving authentic Punjabi, North Indian and Indo-Chinese cuisine. Visit us for delicious vegetarian food and casual dining."
+    />
+
+    <!-- SEO Keywords -->
+    <meta
+      name="keywords"
+      content="Hotel Amiras, Amiras Restaurant, pure veg restaurant Surat, vegetarian restaurant Surat, restaurant in Nana Varachha, Punjabi restaurant Surat, North Indian restaurant Surat, Indo-Chinese restaurant Surat, pure vegetarian food Surat, restaurants in Nana Varachha"
+    />
+
+    <!-- Author -->
+    <meta name="author" content="Hotel Amiras" />
+
+    <!-- ================================= -->
+    <!-- OPEN GRAPH - WHATSAPP / FACEBOOK -->
+    <!-- ================================= -->
+
+    <meta property="og:type" content="website" />
+
+    <meta
+      property="og:title"
+      content="Hotel Amiras | Pure Veg Restaurant in Surat"
+    />
+
+    <meta
+      property="og:description"
+      content="Enjoy authentic Punjabi, North Indian and Indo-Chinese vegetarian cuisine at Hotel Amiras, Nana Varachha, Surat."
+    />
+
+    <meta
+      property="og:url"
+      content="https://amiras-website.vercel.app/"
+    />
+
+    <meta property="og:site_name" content="Hotel Amiras" />
+
+    <!-- Social Sharing Image -->
+    <meta
+      property="og:image"
+      content="https://amiras-website.vercel.app/restaurant-preview.jpg"
+    />
+
+    <meta
+      property="og:image:alt"
+      content="Hotel Amiras Pure Vegetarian Restaurant in Surat"
+    />
+
+    <!-- ================================= -->
+    <!-- TWITTER / X SOCIAL SHARING -->
+    <!-- ================================= -->
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta
+      name="twitter:title"
+      content="Hotel Amiras | Pure Veg Restaurant in Surat"
+    />
+
+    <meta
+      name="twitter:description"
+      content="Authentic Punjabi, North Indian and Indo-Chinese vegetarian cuisine in Nana Varachha, Surat."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://amiras-website.vercel.app/restaurant-preview.jpg"
+    />
+
+    <!-- ================================= -->
+    <!-- GOOGLE FONTS -->
+    <!-- ================================= -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ================================= -->
+    <!-- RESTAURANT STRUCTURED DATA -->
+    <!-- ================================= -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Hotel Amiras",
+        "url": "https://amiras-website.vercel.app/",
+        "description": "Pure vegetarian restaurant in Nana Varachha, Surat serving Punjabi, North Indian and Indo-Chinese cuisine.",
+        "servesCuisine": [
+          "Punjabi",
+          "North Indian",
+          "Indo-Chinese",
+          "Vegetarian"
+        ],
+        "priceRange": "₹₹",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Surat",
+          "addressRegion": "Gujarat",
+          "addressCountry": "IN"
+        }
+      }
+    </script>
   </head>
-  <body class="bg-[#0f0d0b] text-[#f7f5f0] selection:bg-amber-500 selection:text-black font-sans antialiased overflow-x-hidden">
+
+  <body
+    class="bg-[#0f0d0b] text-[#f7f5f0] selection:bg-amber-500 selection:text-black font-sans antialiased overflow-x-hidden"
+  >
     <div id="root"></div>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
-
+```
